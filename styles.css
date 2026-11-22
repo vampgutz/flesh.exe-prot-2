@@ -1,0 +1,102 @@
+
+body {
+    margin: 0;
+    background-color: #080508;
+    color: #cc3333;
+    font-family: monospace;
+    overflow: hidden;
+}
+
+h1 {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    z-index: 1;
+}
+
+p {
+    position: absolute;
+    top: 65px;
+    left: 20px;
+    z-index: 1;
+}
+
+canvas {
+    display: block;
+}
+
+
+#interactionMessage {
+    display: none;
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    color: #ff6688;
+    background-color: #200810;
+    border: 1px solid #ff6688;
+    padding: 15px;
+
+    font-family: monospace;
+    z-index: 10;
+}
+
+
+/* Flesh computer dialogue box */
+#dialogueBox {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    max-width: 85%;
+    padding: 25px;
+    background-color: #19090f;
+    border: 2px solid #990033;
+    color: #ffb3c6;
+    font-family: monospace;
+    text-align: center;
+    z-index: 100;
+}
+
+/* Computer name */
+#dialogueBox h2 {
+    color: #ff4466;
+}
+
+
+/* Computer's response */
+#computerResponse {
+    display: block;
+    margin: 20px 0 25px 0;
+    padding: 10px;
+    color: #ffb3c6;
+    line-height: 1.6;
+    min-height: 30px;
+    height: auto;
+    position: static;
+}
+
+
+/* Question buttons */
+#dialogueBox button {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #3b1020;
+    border: 1px solid #990033;
+    color: #ffb3c6;
+    font-family: monospace;
+    cursor: pointer;
+}
+
+/* Button hover effect */
+#dialogueBox button:hover {
+    background-color: #990033;
+    color: white;
+}
+
+

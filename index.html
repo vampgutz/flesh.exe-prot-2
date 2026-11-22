@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FLESH.EXE</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <h1>FLESH.EXE</h1>
+    <p>FIRST TEST // MOVEMENT TESTING </p>
+
+    <div id="interactionMessage">
+            [PRESS E TO INTERACT]
+    </div>
+
+    
+<!-- Dialogue box for the flesh computer -->
+<div id="dialogueBox" style="display: none;">
+
+    <h2>FLESH.EXE</h2>
+
+    <p id="computerResponse">
+        What do you want, little thing?
+    </p>
+
+    <!-- Questions the player can ask -->
+    <button id="question1">What are you?</button>
+    <button id="question2">Where am I?</button>
+    <button id="question3">Can I leave?</button>
+
+    <!-- Close the dialogue -->
+    <button id="closeDialogue">Close</button>
+
+</div>
+
+
+
+<!-- Tell Three.js where to find its files -->
+<script type="importmap">
+{
+    "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/"
+    }
+}
+</script>
+
+    
+    <script type="module" src="js/script.js"></script>
+
+</body>
+</html>
